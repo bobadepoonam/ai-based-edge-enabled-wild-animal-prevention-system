@@ -325,21 +325,6 @@ python3 farm_intrusion_master.py
 
 ---
 
-## Citation
-
-If you use this work, please cite:
-
-```bibtex
-@phdthesis{bobade2025farmAI,
-  author  = {Poonam Bobade},
-  title   = {AI-Based Edge-Enabled Adaptive Farm Animal Intrusion Prevention System},
-  year    = {2026}
-}
-```
-
----
-
-
 <p align="center">
   <i>AI-Based Edge-Enabled Adaptive Farm Animal Intrusion Prevention System — PhD Research 2025</i><br/>
   <i>Poonam Bobade</i>
