@@ -1,0 +1,6 @@
+bear
+cow
+deer
+goat
+human
+wild boar

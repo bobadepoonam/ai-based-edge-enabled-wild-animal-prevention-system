@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+/dataset
+*.bear
+*.cow
+*.goat
+*.human
+*.wild boar
+*.deer
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Large trained Keras model files
+# (Share via Google Drive / Hugging Face Hub instead)
+saved_models/
+*.keras
+*.h5
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs (local only)
+*.log
+retrain_cron.log
+
+# Virtual environments
+venv/
+env/
+.env/

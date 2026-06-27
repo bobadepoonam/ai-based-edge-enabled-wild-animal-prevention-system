@@ -1,0 +1,33 @@
+# AI-Based Edge-Enabled Farm Animal Intrusion Prevention System
+# Dependencies
+
+# Core deep learning
+tensorflow>=2.12.0
+keras>=2.12.0
+
+# Computer vision
+opencv-python>=4.7.0
+Pillow>=9.5.0
+
+# Data & ML utilities
+numpy>=1.23.0
+scikit-learn>=1.2.0
+pandas>=1.5.0
+
+# Metrics & plots
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── Raspberry Pi 5 edge node (no internet required) ──────────────
+# LoRa communication to ESP32 (SX127x HAT over SPI)
+pyLoRa>=0.3.0
+
+# Raspberry Pi Camera Module v2
+# Install on the Pi with: sudo apt install python3-picamera2
+# picamera2>=0.3.12      # uncomment on Raspberry Pi
+
+# GPIO control (Raspberry Pi only)
+# RPi.GPIO>=0.7.1        # uncomment on Raspberry Pi
+
+# Optional: lightweight TFLite runtime (faster than full TF on Pi)
+# tflite-runtime>=2.13.0 # uncomment on Raspberry Pi
