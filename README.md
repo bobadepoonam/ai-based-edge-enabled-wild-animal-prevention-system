@@ -174,6 +174,38 @@ The dataset contains **5,200+ images** across **6 classes** relevant to farm int
 - Stratified split: **70% train / 10% validation / 20% test**
 - Augmentation: random horizontal flip, ±20% brightness/contrast/saturation
 
+### Dataset Download
+
+The full dataset (5,200+ images across 6 classes) is hosted on Google Drive:
+
+🔗 **[Download Dataset](https://drive.google.com/drive/folders/1WCniW4aXkqH2HYNCJ7Pa3QFebB3pA_z5?usp=drive_link)**
+
+After downloading, extract the folders so your project structure matches:
+
+```
+ai-based-edge-enabled-wild-animal-prevention-system/
+└── dataset/
+    ├── bear/
+    ├── cow/
+    ├── deer/
+    ├── goat/
+    ├── human/
+    └── wild boar/
+```
+
+> ⚠️ **Important:** The dataset path must be exactly `./dataset/<class_name>/` relative to the project root. Class folder names must match exactly (lowercase, `wild boar` with a space) since `dataset_utils.py` reads class labels directly from these folder names. If you place the dataset elsewhere, update the `DATASET_DIR` path variable in `dataset_utils.py` accordingly.
+
+**Setup steps:**
+1. Click the Drive link above and download the folder (or use `gdown` for CLI download — see below).
+2. Unzip/move all 6 class folders into a `dataset/` folder at the repo root.
+3. Verify the structure matches the tree above before running `phd_research_notebook.ipynb` or `dataset_utils.py`.
+
+**Optional CLI download:**
+```bash
+pip install gdown
+gdown --folder https://drive.google.com/drive/folders/1WCniW4aXkqH2HYNCJ7Pa3QFebB3pA_z5 -O dataset/
+```
+
 ---
 
 ## Models
@@ -254,13 +286,17 @@ cd ai-based-edge-enabled-wild-animal-prevention-system
 pip install -r requirements.txt
 ```
 
-### 2. Run the Research Notebook
+### 2. Download the Dataset
+
+See the [Dataset Download](#dataset-download) section above. Make sure the `dataset/` folder sits at the repo root with the 6 class subfolders.
+
+### 3. Run the Research Notebook
 
 ```bash
 jupyter notebook phd_research_notebook.ipynb
 ```
 
-### 3. Raspberry Pi 5 Deployment
+### 4. Raspberry Pi 5 Deployment
 
 ```bash
 # On Raspberry Pi OS Lite (64-bit):
@@ -281,7 +317,7 @@ scp logic/adaptive_retrain.py pi@raspberrypi.local:/home/pi/farm/
 python3 farm_intrusion_master.py
 ```
 
-### 4. ESP32 Firmware
+### 5. ESP32 Firmware
 
 1. Open Arduino IDE → Install **LoRa by Sandeep Mistry**
 2. Board: **ESP32 Dev Module**
