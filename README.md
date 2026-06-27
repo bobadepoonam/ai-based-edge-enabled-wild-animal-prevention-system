@@ -333,18 +333,12 @@ If you use this work, please cite:
 @phdthesis{bobade2025farmAI,
   author  = {Poonam Bobade},
   title   = {AI-Based Edge-Enabled Adaptive Farm Animal Intrusion Prevention System},
-  school  = {[University Name]},
-  year    = {2025}
+  year    = {2026}
 }
 ```
 
 ---
 
-## License
-
-This repository is shared for **academic research verification purposes only** as requested by the publisher. All rights reserved © Poonam Bobade, 2025.
-
----
 
 <p align="center">
   <i>AI-Based Edge-Enabled Adaptive Farm Animal Intrusion Prevention System — PhD Research 2025</i><br/>
